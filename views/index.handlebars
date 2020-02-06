@@ -1,0 +1,75 @@
+<div class="container">
+  <div>
+    <div class="row">
+      <h1 class="d-flex justify-content-center col-12">Burgers!</h1>
+
+    </div>
+    <div class="row d-flex justify-content-center">
+
+      <img
+        src="https://realfood.tesco.com/media/images/RFO-1400x919-Monster-burgers-ea2d9eb9-3c70-4453-aca3-b48f9cc872c5-0-1400x919.jpg" class="col-6">
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-between mt-5">
+
+    <div id="new-burgers" class="col-6">
+      <h2 class="d-flex justify-content-center">New Burgers</h2>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li class="d-flex justify-content-center">
+          {{burger_name}}:
+
+          <button class="change-devoured" data-id={{id}}>
+            Eat it?
+          </button>
+        </li>
+        {{/unless}}
+        {{/each}}
+      </ul>
+
+    </div>
+
+    <div id="old-burgers" class="col-6">
+
+      <h2 class="d-flex justify-content-center">Devoured Burgers</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        <li class="d-flex justify-content-center">
+          {{burger_name}}
+        </li>
+        {{/if}}
+        {{/each}}
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <h2 class="col-12 d-flex justify-content-center">Make a new burger!</h2>
+
+    <div class="col-12 d-flex justify-content-center">
+
+
+
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="bu">Create New Burger:</label>
+          <textarea type="text" id="bu" name="burger_name">
+
+          </textarea>
+          <button class="add" type="click">Add Burger</button>
+        </div>
+
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>

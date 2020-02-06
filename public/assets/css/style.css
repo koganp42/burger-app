@@ -1,0 +1,50 @@
+/* #new-burgers {
+  float: left;
+}
+
+#old-burgers {
+  float: right;
+} */
+
+/* li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+} *
+
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+/* form {
+  float: clear;
+  justify-content: center;
+}
+.center form {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+body {
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+}
